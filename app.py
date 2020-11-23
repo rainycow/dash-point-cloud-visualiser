@@ -231,7 +231,7 @@ def add_to_storage(timestamp, data):
 
     print('current storage is {}'.format(data))
     print('modified_timestamp is {}'.format(timestamp))
-    with open('/Users/Tytyty/Desktop/BII/heaRt/result.json', 'w') as outfile:
+    with open('../heaRt/result.json', 'w') as outfile:
         outfile.write(json.dumps(data, ensure_ascii=False))
     return json.dumps(data)
 
